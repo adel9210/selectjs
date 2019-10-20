@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smoothy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="select"></div>
+
+    <script src="js/app.js"></script>
+
+    <script>
+        var users = [
+            {
+                label: "Adel Sadek",
+                image: 'https://source.unsplash.com/user/jackie/50x50',
+                checked: false
+            },
+            {
+                label: "Jon Smith",
+                image: 'https://source.unsplash.com/random/50x50',
+                checked: false
+            },
+            {
+                label: "Dollay Smith",
+                image: 'https://source.unsplash.com/user/jackie/50x50',
+                checked: false
+            },
+            {
+                label: "Will Smith",
+                image: 'https://source.unsplash.com/random/50x50',
+                checked: false
+            },
+            {
+                label: "John Die",
+                image: 'https://source.unsplash.com/user/jackie/50x50',
+                checked: false
+            }
+        ]
+
+        // Call init function 
+        selectJS.init(document.querySelector('#select'), users);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.smoothy {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+
+    .smoothy__search {
+        border: 0;
+        border-bottom: 2px solid #efebeb;
+        outline: 0;
+        width: 100%;
+        padding: 5px;
+        &:focus {
+            outline: 0;
+            border-bottom-color: #007ea0;
+        }
+    }
+    .smoothy__selected__items {
+        display: flex;
+        flex-wrap: wrap;
+        .smoothy__item--checked {
+            margin: 5px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            // background-color: #e8dede;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .remove_icon {
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                background: #9e9e9e;
+                color: #fff;
+                border-radius: 50%;
+                font-size: .7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .smoothy__items {
+        display: none;
+        width: 100%;
+        padding: 5px;
+        background-color: #fff;
+        margin-top: 10px;
+        box-shadow: 2px 2px 16px 2px #e8e8e8;
+
+        .smoothy__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+
+            .label {
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: #000;
+            }
+
+            .image {
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 5px;
+                }
+            }
+
+            .checkbox {
+                input {
+                    display: none;
+                }
+                input:checked {
+                    &::after {
+                        content: url(tick.svg);
+                        // background-color: steelblue;
+                        width: 20px;
+                        padding: 10px 10px;
+                        position: absolute;
+                        right: 10px;
+                        top: 15px;
+                        visibility: visible
+                    }
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #efebeb;
+            }
+            &:hover {
+                background-color: #efebeb;
+            }
+            
+        }
+    }
+
+    .show-list {
+        display: block;
+    }
+}
