@@ -1,7 +1,8 @@
 /*  
     Title: SelectJS MultiSelect Dropdown
     Author: Adel Sadek
-    Date: 03/10/2019
+    Date: 03/10/2019,
+    version: 1.0.0
 
 */
 
